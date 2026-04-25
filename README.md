@@ -15,6 +15,7 @@ Ushbu loyiha o‘quvchilar va talabalar uchun geometriya mavzularini sodda va am
 ## Muallif
 
 ![Avatar](./images/avatar.jpg)
+
 **Izzatjon Qodirov**
 
 - GitHub: [rambo-mb](https://github.com/rambo-mb)
