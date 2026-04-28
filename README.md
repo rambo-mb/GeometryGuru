@@ -1,21 +1,50 @@
-# GeometryGuru
+![Logo](./images/logo.jpg)
 
-![GeometryGuru](/images/logo.jpg)
+# 🧮 GeometryGuru
 
-GeometryGuru — geometriyani oson va tushunarli tarzda o‘rganishga yordam beruvchi ilova. Unda turli shakllar, formulalar va masalalar orqali bilimlaringizni mustahkamlashingiz mumkin
+Oddiy va tushunarli arifmetik amallar kalkulyatori
 
-## GeometryGuru dasturi quyidagilarni bajaradi
+---
 
-- aylana uzunligini hisoblash
-- doira yuzini hisoblash
-- uchburchak yuzini hisoblash
+## 🚀 Imkoniyatlari
 
-## Maqsad
+Dastur quyidagi amallarni bajaradi:
 
-Ushbu loyiha o‘quvchilar va talabalar uchun geometriya mavzularini sodda va amaliy tarzda tushunishga yordam berish uchun yaratilgan.
+- ➕ Qo‘shish
+- ➖ Ayirish
+- ✖️ Ko‘paytirish
+- ➗ Bo‘lish
 
-## Muallif
+---
 
-**Izzatjon Qodirov**
+## 📚 Qanday ishlaydi
+
+1. Foydalanuvchi ikkita son kiritadi
+2. Dastur ushbu sonlar ustida barcha arifmetik amallarni bajaradi
+3. Natijalar ekranga chiqariladi
+
+---
+
+## 🖼 Screenshots
+
+### 🔢 Input qismi
+
+![Kiritishlar](./images/input.png)
+
+### 📊 Natijalar
+
+![Natijalar](./images/result.png)
+
+---
+
+## 🎯 Maqsad
+
+Ushbu loyiha dasturlashni o‘rganayotganlar uchun oddiy arifmetik amallarni tushunish va amaliyot qilish maqsadida yaratilgan.
+
+---
+
+## 👨‍💻 Muallif
+
+**Qodirov Izzatjon**
 
 - GitHub: [rambo-mb](https://github.com/rambo-mb)
