@@ -1,5 +1,7 @@
 # GeometryGuru
 
+![GeometryGuru](/images/avatar.jpg)
+
 GeometryGuru — geometriyani oson va tushunarli tarzda o‘rganishga yordam beruvchi ilova. Unda turli shakllar, formulalar va masalalar orqali bilimlaringizni mustahkamlashingiz mumkin
 
 ## GeometryGuru dasturi quyidagilarni bajaradi
@@ -13,8 +15,6 @@ GeometryGuru — geometriyani oson va tushunarli tarzda o‘rganishga yordam ber
 Ushbu loyiha o‘quvchilar va talabalar uchun geometriya mavzularini sodda va amaliy tarzda tushunishga yordam berish uchun yaratilgan.
 
 ## Muallif
-
-![Avatar](./images/avatar.jpg)
 
 **Izzatjon Qodirov**
 

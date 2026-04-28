@@ -1,0 +1,15 @@
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.AssemblyInfoInputs.cache
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.AssemblyInfo.cs
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.csproj.CoreCompileInputs.cache
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.sourcelink.json
+D:\Tarteeb\GeometryGuru\bin\Debug\net10.0\GeometryGuru.exe
+D:\Tarteeb\GeometryGuru\bin\Debug\net10.0\GeometryGuru.deps.json
+D:\Tarteeb\GeometryGuru\bin\Debug\net10.0\GeometryGuru.runtimeconfig.json
+D:\Tarteeb\GeometryGuru\bin\Debug\net10.0\GeometryGuru.dll
+D:\Tarteeb\GeometryGuru\bin\Debug\net10.0\GeometryGuru.pdb
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.dll
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\refint\GeometryGuru.dll
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.pdb
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\GeometryGuru.genruntimeconfig.cache
+D:\Tarteeb\GeometryGuru\obj\Debug\net10.0\ref\GeometryGuru.dll
