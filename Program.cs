@@ -1,13 +1,13 @@
-﻿Console.Write("Birinchi sonni kiriting: ");
-string firstString = Console.ReadLine();
-decimal firstNumber = Convert.ToDecimal(firstString);
+﻿Console.WriteLine("GeometyGuru dasturi bilan arifmetik amallarni bajaring");
+
+Console.Write("Birinchi sonni kiriting: ");
+decimal firstNumber = Convert.ToDecimal(Console.ReadLine());
 
 Console.Write("Ikkinchi sonni kiriting: ");
-string secondString = Console.ReadLine();
-decimal secondNumber = Convert.ToDecimal(secondString);
+decimal secondNumber = Convert.ToDecimal(Console.ReadLine());
 
-Console.WriteLine(firstString + " + " + secondString + " = " + (firstNumber + secondNumber));
-Console.WriteLine(firstString + " - " + secondString + " = " + (firstNumber - secondNumber));
-Console.WriteLine(firstString + " * " + secondString + " = " + (firstNumber * secondNumber));
-Console.WriteLine(firstString + " / " + secondString + " = " + (firstNumber / secondNumber));
+Console.WriteLine(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+Console.WriteLine(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+Console.WriteLine(firstNumber + " * " + secondNumber + " = " + (firstNumber * secondNumber));
+Console.WriteLine(firstNumber + " / " + secondNumber + " = " + (firstNumber / secondNumber));
 
