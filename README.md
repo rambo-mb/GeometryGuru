@@ -16,8 +16,8 @@ Dastur quyidagi amallarni bajaradi:
 
 ## 🧠 Formula
 
-`p = (a + b + c) / 2`
-`S = √(p(p - a)(p - b)(p - c))`
+`s = (a + b + c) / 2`
+`Area = √(s(s - a)(s - b)(s - c))`
 
 ---
 
