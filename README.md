@@ -1,45 +1,37 @@
-![Logo](./images/logo.jpg)
+![Heron](./images/heron.png)
 
 # 🧮 GeometryGuru
 
-Oddiy va tushunarli arifmetik amallar kalkulyatori
-
----
+## Bu dastur C# tilida yozilgan oddiy konsol ilovasi bo‘lib, uchburchak yuzasini hisoblaydi.
 
 ## 🚀 Imkoniyatlari
 
 Dastur quyidagi amallarni bajaradi:
 
-- ➕ Qo‘shish
-- ➖ Ayirish
-- ✖️ Ko‘paytirish
-- ➗ Bo‘lish
+- Foydalanuvchidan 3 ta tomon qabul qiladi (a, b, c)
+- Uchburchak yuzasini Geron formulasi orqali hisoblaydi
+- Natijani ekranga chiqaradi
+
+---
+
+## 🧠 Formula
+
+`p = (a + b + c) / 2`
+`S = √(p(p - a)(p - b)(p - c))`
+
+---
+
+## ▶️ Dastur ishlashi
+
+![Result](./images/result.gif)
 
 ---
 
 ## 📚 Qanday ishlaydi
 
-1. Foydalanuvchi ikkita son kiritadi
-2. Dastur ushbu sonlar ustida barcha arifmetik amallarni bajaradi
-3. Natijalar ekranga chiqariladi
-
----
-
-## 🖼 Screenshots
-
-### 🔢 Input qismi
-
-![Kiritishlar](./images/input.png)
-
-### 📊 Natijalar
-
-![Natijalar](./images/result.png)
-
----
-
-## 🎯 Maqsad
-
-Ushbu loyiha dasturlashni o‘rganayotganlar uchun oddiy arifmetik amallarni tushunish va amaliyot qilish maqsadida yaratilgan.
+1. Foydalanuvchi a, b, c tomonlarni kiritadi
+2. Dastur yarim perimetrni hisoblaydi
+3. Yuzani hisoblab chiqaradi
 
 ---
 

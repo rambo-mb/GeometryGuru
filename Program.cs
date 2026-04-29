@@ -1,13 +1,18 @@
-﻿Console.WriteLine("GeometyGuru dasturi bilan arifmetik amallarni bajaring");
+﻿Console.WriteLine("Geron formulasi yordamida uchburchak yuzasini \nhisoblovchi dasturga xush kelibsiz!");
 
-Console.Write("Birinchi sonni kiriting: ");
-decimal firstNumber = Convert.ToDecimal(Console.ReadLine());
+Console.Write("Uchburchak a tomoni: ");
+string? aSideStr = Console.ReadLine();
+int aSide = Convert.ToInt32(aSideStr);
 
-Console.Write("Ikkinchi sonni kiriting: ");
-decimal secondNumber = Convert.ToDecimal(Console.ReadLine());
+Console.Write("Uchburchak b tomoni: ");
+string? bSideStr = Console.ReadLine();
+int bSide = Convert.ToInt32(bSideStr);
 
-Console.WriteLine(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
-Console.WriteLine(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
-Console.WriteLine(firstNumber + " * " + secondNumber + " = " + (firstNumber * secondNumber));
-Console.WriteLine(firstNumber + " / " + secondNumber + " = " + (firstNumber / secondNumber));
+Console.Write("Uchburchak c tomoni: ");
+string? cSideStr = Console.ReadLine();
+int cSide = Convert.ToInt32(cSideStr);
 
+int s = (aSide + bSide + cSide) / 2;
+decimal areaTriangle = (decimal) Math.Sqrt(s * (s - aSide) * (s - bSide) * (s - cSide));
+
+Console.WriteLine($"Uchburchak yuzi: {areaTriangle}");
