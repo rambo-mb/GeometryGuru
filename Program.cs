@@ -46,6 +46,11 @@ switch(menuOption)
                 }
               case "4":
                 {
+									if(secondNumber == 0)
+									{
+										Console.WriteLine("\n0 ga bo'lib bo'lmaydi!");
+										break;
+									}
                   Console.WriteLine($"\n{firstNumber} / {secondNumber} = {firstNumber/secondNumber}");
                   break;
                 }
@@ -141,8 +146,8 @@ switch(menuOption)
             string? radiusStr = Console.ReadLine();
             double radius = Convert.ToDouble(radiusStr);
 
-            Console.WriteLine($"\nAylana uzunligi: {2 * Math.PI * radius}");
-            Console.WriteLine($"\nDoira yuzi: {Math.PI * Math.Pow(radius, 2)}");
+            Console.WriteLine($"\nAylana uzunligi: {(2 * Math.PI * radius):0.##}");
+            Console.WriteLine($"\nDoira yuzi: {(Math.PI * Math.Pow(radius, 2)):0.##}");
             break;
           }
         case "3":
@@ -151,7 +156,7 @@ switch(menuOption)
             string? radiusStr = Console.ReadLine();
             double radius = Convert.ToDouble(radiusStr);
 
-            Console.WriteLine($"\nShar hajmi: {(4 / 3) * Math.PI * Math.Pow(radius, 3)}");
+            Console.WriteLine($"\nShar hajmi: {(4 * Math.PI * Math.Pow(radius, 3) / 3):0.##}");
             break;
           }
         case "4":
@@ -164,7 +169,7 @@ switch(menuOption)
             double height = Convert.ToDouble(heightStr);
 
 
-            Console.WriteLine($"\nSilindr hajmi: {Math.PI * Math.Pow(radius, 2) * height}");
+            Console.WriteLine($"\nSilindr hajmi: {(Math.PI * Math.Pow(radius, 2) * height):0.##}");
             break;
           }
         case "5":
@@ -177,7 +182,7 @@ switch(menuOption)
             double height = Convert.ToDouble(heightStr);
 
 
-            Console.WriteLine($"\nKonus hajmi: {(1 / 3) * Math.PI * Math.Pow(radius, 2) * height}");
+            Console.WriteLine($"\nKonus hajmi: {(Math.PI * Math.Pow(radius, 2) * height / 3):0.##}");
             break;
           }
         case "6":
@@ -198,7 +203,6 @@ switch(menuOption)
             break;
           }
       }
-
 			break;
 		}
 	case "0":

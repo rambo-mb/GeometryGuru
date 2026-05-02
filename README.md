@@ -1,37 +1,48 @@
-![Heron](./images/heron.png)
+![Heron](./images/logo.jpg)
 
-# 🧮 GeometryGuru
+# 📐 GeometryGuru v2
 
-## Bu dastur C# tilida yozilgan oddiy konsol ilovasi bo‘lib, uchburchak yuzasini hisoblaydi.
+## Bu dastur C# tilida yozilgan konsol ilovasi bo‘lib, arifmetik va geometrik hisob-kitoblarni bajaradi.
 
 ## 🚀 Imkoniyatlari
 
-Dastur quyidagi amallarni bajaradi:
+### 🔢 Arifmetik amallar:
 
-- Foydalanuvchidan 3 ta tomon qabul qiladi (a, b, c)
-- Uchburchak yuzasini Geron formulasi orqali hisoblaydi
-- Natijani ekranga chiqaradi
+- Qo‘shish (+)
+- Ayirish (-)
+- Ko‘paytirish (\*)
+- Bo‘lish (/)
+- Kvadrat (x²)
+- Kub (x³)
+- Kvadrat ildiz (√x)
+- Darajaga oshirish (xʸ)
+- Qoldiq (%) hisoblash
 
 ---
 
-## 🧠 Formula
+### 📐 Geometrik amallar:
 
-`s = (a + b + c) / 2`
-`Area = √(s(s - a)(s - b)(s - c))`
+- Uchburchak yuzasi (Heron formulasi)
+- Aylana uzunligi va yuzasi
+- Shar hajmi
+- Silindr hajmi
+- Konus hajmi
+- Pifagor teoremasi
 
 ---
 
 ## ▶️ Dastur ishlashi
 
-![Result](./images/result.gif)
+![Result](./images/resultv2.gif)
 
 ---
 
-## 📚 Qanday ishlaydi
+## 🛠️ Qanday ishlaydi
 
-1. Foydalanuvchi a, b, c tomonlarni kiritadi
-2. Dastur yarim perimetrni hisoblaydi
-3. Yuzani hisoblab chiqaradi
+1. Foydalanuvchi menyudan bo‘lim tanlaydi
+2. Kerakli amalni tanlaydi
+3. Kerakli qiymatlarni kiritadi
+4. Natija ekranga chiqariladi
 
 ---
 
