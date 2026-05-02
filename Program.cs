@@ -113,6 +113,92 @@ switch(menuOption)
 			Console.Write("Tanlovni kiriting: ");
 			string? geometricOption = Console.ReadLine(); 
 
+			switch(geometricOption)
+      {
+        case "1":
+          {
+            Console.Write("\nUchburchak a tomoni: ");
+            string? aSideStr = Console.ReadLine();
+            int aSide = Convert.ToInt32(aSideStr);
+
+            Console.Write("Uchburchak b tomoni: ");
+            string? bSideStr = Console.ReadLine();
+            int bSide = Convert.ToInt32(bSideStr);
+
+            Console.Write("Uchburchak c tomoni: ");
+            string? cSideStr = Console.ReadLine();
+            int cSide = Convert.ToInt32(cSideStr);
+
+            int sumOfSides = (aSide + bSide + cSide) / 2;
+            decimal areaTriangle = (decimal) Math.Sqrt(sumOfSides * (sumOfSides - aSide) * (sumOfSides - bSide) * (sumOfSides - cSide));
+
+            Console.WriteLine($"\nUchburchak yuzi: {areaTriangle}");
+            break;
+          }
+        case "2":
+          {
+            Console.Write("\nAylana yoki doira radiusi: ");
+            string? radiusStr = Console.ReadLine();
+            double radius = Convert.ToDouble(radiusStr);
+
+            Console.WriteLine($"\nAylana uzunligi: {2 * Math.PI * radius}");
+            Console.WriteLine($"\nDoira yuzi: {Math.PI * Math.Pow(radius, 2)}");
+            break;
+          }
+        case "3":
+          {
+            Console.Write("\nShar radiusi: ");
+            string? radiusStr = Console.ReadLine();
+            double radius = Convert.ToDouble(radiusStr);
+
+            Console.WriteLine($"\nShar hajmi: {(4 / 3) * Math.PI * Math.Pow(radius, 3)}");
+            break;
+          }
+        case "4":
+          {
+            Console.Write("\nSilindr radiusi: ");
+            string? radiusStr = Console.ReadLine();
+            double radius = Convert.ToDouble(radiusStr);
+            Console.Write("Silindr balandligi: ");
+            string? heightStr = Console.ReadLine();
+            double height = Convert.ToDouble(heightStr);
+
+
+            Console.WriteLine($"\nSilindr hajmi: {Math.PI * Math.Pow(radius, 2) * height}");
+            break;
+          }
+        case "5":
+          {
+            Console.Write("\nKonus radiusi: ");
+            string? radiusStr = Console.ReadLine();
+            double radius = Convert.ToDouble(radiusStr);
+            Console.Write("Konus balandligi: ");
+            string? heightStr = Console.ReadLine();
+            double height = Convert.ToDouble(heightStr);
+
+
+            Console.WriteLine($"\nKonus hajmi: {(1 / 3) * Math.PI * Math.Pow(radius, 2) * height}");
+            break;
+          }
+        case "6":
+          {
+            Console.Write("\nKichik katet: ");
+            string? aSideStr = Console.ReadLine();
+            double aSide = Convert.ToDouble(aSideStr);
+            Console.Write("Katta katet: ");
+            string? bSideStr = Console.ReadLine();
+            double bSide = Convert.ToDouble(bSideStr);
+
+            Console.WriteLine($"\nGippotenuza: {Math.Sqrt(Math.Pow(aSide, 2) + Math.Pow(bSide, 2))}");
+            break;
+          }
+        default:
+          {
+            Console.WriteLine("\nNoto'g'ri buyruq kiritdingiz! Iltimos dasturni qayta ishga tushiring.");
+            break;
+          }
+      }
+
 			break;
 		}
 	case "0":
