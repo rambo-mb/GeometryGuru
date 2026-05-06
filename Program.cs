@@ -14,7 +14,7 @@ do
     case "1":
       {
         Console.WriteLine("\n=== Arifmetik amallar ===\n");
-        Console.WriteLine("1. Qo‘shish \n2. Ayirish \n3. Ko‘paytirish \n4. Bo‘lish \n5. Kvadrat \n6. Kub \n7. Kvadrat ildiz \n8. Darajaga oshirish \n9. Qoldiq\n");
+        Console.WriteLine("1. Qo‘shish \n2. Ayirish \n3. Ko‘paytirish \n4. Bo‘lish \n5. Kvadrat \n6. Kub \n7. Kvadrat ildiz \n8. Darajaga oshirish \n9. Qoldiq\n10. 1 dan N gacha bo'lgan tub sonlarni topish");
         Console.Write("Tanlovni kiriting: ");
         string? arifmeticOption = Console.ReadLine();
         
@@ -71,6 +71,7 @@ do
           case "5":
           case "6":
           case "7":
+          case "10":
             {
               Console.Write("\nSonni kiriting: ");
               string? firstString = Console.ReadLine();
@@ -91,6 +92,28 @@ do
                 case "7":
                   {
                     Console.WriteLine($"\n{firstNumber} sonining ikkilik ildizi: {Math.Sqrt(firstNumber)}");
+                    break;
+                  }
+                case "10":
+                  {
+                    int sum = 0;
+                    int counter = 0;
+                    for(int i = 1; i < firstNumber; i++)
+                    {
+                      for(int j = 1; j < firstNumber; j++)
+                      {
+                        if(i % j == 0) counter++;
+                      }
+
+                      if(counter == 2) 
+                      {
+                        Console.Write($"-{i}-");
+                        sum += i;
+                      }
+                      counter = 0;
+                    }
+
+                    Console.WriteLine($"\n1 dan {firstNumber} orasidagi tub sonlar yig'indisi: {sum}");
                     break;
                   }
               }
