@@ -3,7 +3,6 @@
 do 
 {
   Console.Clear();
-
   Console.WriteLine("\n=== GeometryGuru v2 ===\n");
   Console.WriteLine("1. Arifmetik amallar \n2. Geometrik amallar \n0. Chiqish \n");
   Console.Write("Tanlovni kiriting: ");
@@ -21,114 +20,53 @@ do
         switch(arifmeticOption)
         {
           case "1":
+            {
+              Add();
+              break;
+            }
           case "2":
+            {
+              Subtract();
+              break;
+            }
           case "3":
+            {
+              Multiply();
+              break;
+            }
           case "4":
+            {
+              Divide();
+              break;
+            }
           case "9":
             {
-              Console.Write("\nBirinchi sonni kiriting: ");
-              string? firstString = Console.ReadLine();
-              decimal firstNumber = Convert.ToDecimal(firstString);
-              Console.Write("Ikkinchi sonni kiriting: ");
-              string? secondString = Console.ReadLine();
-              decimal secondNumber = Convert.ToDecimal(secondString);
-
-              switch(arifmeticOption)
-              {
-                case "1":
-                  {
-                    Console.WriteLine($"\n{firstNumber} + {secondNumber} = {firstNumber+secondNumber}");
-                    break;
-                  }
-                case "2":
-                  {
-                    Console.WriteLine($"\n{firstNumber} - {secondNumber} = {firstNumber-secondNumber}");
-                    break;
-                  }
-                case "3":
-                  {
-                    Console.WriteLine($"\n{firstNumber} * {secondNumber} = {firstNumber*secondNumber}");
-                    break;
-                  }
-                case "4":
-                  {
-                    if(secondNumber == 0)
-                    {
-                      Console.WriteLine("\n0 ga bo'lib bo'lmaydi!");
-                      break;
-                    }
-                    Console.WriteLine($"\n{firstNumber} / {secondNumber} = {firstNumber/secondNumber}");
-                    break;
-                  }
-                case "9":
-                  {
-                    Console.WriteLine($"\n{firstNumber} % {secondNumber} = {firstNumber%secondNumber}");
-                    break;
-                  }
-              }
+              Modulo();
               break;
             }
           case "5":
+            {
+              Square();
+              break;
+            }
           case "6":
+            {
+              Cube();
+              break;
+            }
           case "7":
+            {
+              SquareRoot();
+              break;
+            }
           case "10":
             {
-              Console.Write("\nSonni kiriting: ");
-              string? firstString = Console.ReadLine();
-              double firstNumber = Convert.ToDouble(firstString);
-
-              switch (arifmeticOption)
-              {
-                case "5":
-                  {
-                    Console.WriteLine($"\n{firstNumber} sonining kvadrati: {Math.Pow(firstNumber, 2)}");
-                    break;
-                  }
-                case "6":
-                  {
-                    Console.WriteLine($"\n{firstNumber} sonining kubi: {Math.Pow(firstNumber, 3)}");
-                    break;
-                  }
-                case "7":
-                  {
-                    Console.WriteLine($"\n{firstNumber} sonining ikkilik ildizi: {Math.Sqrt(firstNumber)}");
-                    break;
-                  }
-                case "10":
-                  {
-                    int sum = 0;
-                    int counter = 0;
-                    for(int i = 1; i < firstNumber; i++)
-                    {
-                      for(int j = 1; j < firstNumber; j++)
-                      {
-                        if(i % j == 0) counter++;
-                      }
-
-                      if(counter == 2) 
-                      {
-                        Console.Write($"-{i}-");
-                        sum += i;
-                      }
-                      counter = 0;
-                    }
-
-                    Console.WriteLine($"\n1 dan {firstNumber} orasidagi tub sonlar yig'indisi: {sum}");
-                    break;
-                  }
-              }
+              FindPrimes();
               break;
             }
           case "8":
             {
-              Console.Write("\nSonni kiriting: ");
-              string? firstString = Console.ReadLine();
-              double firstNumber = Convert.ToDouble(firstString);
-              Console.Write("Darajani kiriting: ");
-              string? secondString = Console.ReadLine();
-              double secondNumber = Convert.ToDouble(secondString);
-
-              Console.WriteLine($"\n{firstNumber} sonining {secondNumber}-darajasi: {Math.Pow(firstNumber, secondNumber)}");
+              Power();
               break;  
             }
           default:
@@ -151,79 +89,32 @@ do
         {
           case "1":
             {
-              Console.Write("\nUchburchak a tomoni: ");
-              string? aSideStr = Console.ReadLine();
-              int aSide = Convert.ToInt32(aSideStr);
-
-              Console.Write("Uchburchak b tomoni: ");
-              string? bSideStr = Console.ReadLine();
-              int bSide = Convert.ToInt32(bSideStr);
-
-              Console.Write("Uchburchak c tomoni: ");
-              string? cSideStr = Console.ReadLine();
-              int cSide = Convert.ToInt32(cSideStr);
-
-              int sumOfSides = (aSide + bSide + cSide) / 2;
-              decimal areaTriangle = (decimal) Math.Sqrt(sumOfSides * (sumOfSides - aSide) * (sumOfSides - bSide) * (sumOfSides - cSide));
-
-              Console.WriteLine($"\nUchburchak yuzi: {areaTriangle}");
+              TriangleArea();
               break;
             }
           case "2":
             {
-              Console.Write("\nAylana yoki doira radiusi: ");
-              string? radiusStr = Console.ReadLine();
-              double radius = Convert.ToDouble(radiusStr);
-
-              Console.WriteLine($"\nAylana uzunligi: {(2 * Math.PI * radius):0.##}");
-              Console.WriteLine($"\nDoira yuzi: {(Math.PI * Math.Pow(radius, 2)):0.##}");
+              CircleProperties();
               break;
             }
           case "3":
             {
-              Console.Write("\nShar radiusi: ");
-              string? radiusStr = Console.ReadLine();
-              double radius = Convert.ToDouble(radiusStr);
-
-              Console.WriteLine($"\nShar hajmi: {(4 * Math.PI * Math.Pow(radius, 3) / 3):0.##}");
+              SphereVolume();
               break;
             }
           case "4":
             {
-              Console.Write("\nSilindr radiusi: ");
-              string? radiusStr = Console.ReadLine();
-              double radius = Convert.ToDouble(radiusStr);
-              Console.Write("Silindr balandligi: ");
-              string? heightStr = Console.ReadLine();
-              double height = Convert.ToDouble(heightStr);
-
-
-              Console.WriteLine($"\nSilindr hajmi: {(Math.PI * Math.Pow(radius, 2) * height):0.##}");
+              CylinderVolume();
               break;
             }
           case "5":
             {
-              Console.Write("\nKonus radiusi: ");
-              string? radiusStr = Console.ReadLine();
-              double radius = Convert.ToDouble(radiusStr);
-              Console.Write("Konus balandligi: ");
-              string? heightStr = Console.ReadLine();
-              double height = Convert.ToDouble(heightStr);
-
-
-              Console.WriteLine($"\nKonus hajmi: {(Math.PI * Math.Pow(radius, 2) * height / 3):0.##}");
+              ConeVolume();
               break;
             }
           case "6":
             {
-              Console.Write("\nKichik katet: ");
-              string? aSideStr = Console.ReadLine();
-              double aSide = Convert.ToDouble(aSideStr);
-              Console.Write("Katta katet: ");
-              string? bSideStr = Console.ReadLine();
-              double bSide = Convert.ToDouble(bSideStr);
-
-              Console.WriteLine($"\nGippotenuza: {Math.Sqrt(Math.Pow(aSide, 2) + Math.Pow(bSide, 2))}");
+              PythagoreanTheorem();
               break;
             }
           default:
@@ -250,3 +141,189 @@ do
   confirmation = Console.ReadLine()!;
 
 } while(confirmation.ToLower() == "ha");
+
+
+static (decimal firstNumber, decimal secondNumber) InputTwoNumbers()
+{
+  Console.Write("\nBirinchi sonni kiriting: ");
+  string? firstString = Console.ReadLine();
+  decimal firstNumber = Convert.ToDecimal(firstString);
+  Console.Write("Ikkinchi sonni kiriting: ");
+  string? secondString = Console.ReadLine();
+  decimal secondNumber = Convert.ToDecimal(secondString);
+  return (firstNumber, secondNumber);
+}
+
+static decimal InputOneNumber()
+{
+  Console.Write("\nSonni kiriting: ");
+  string? firstString = Console.ReadLine();
+  decimal firstNumber = Convert.ToDecimal(firstString);
+
+  return firstNumber;
+}
+
+static void Add()
+{
+  (decimal firstNumber, decimal secondNumber) = InputTwoNumbers();
+  Console.WriteLine($"\n{firstNumber} + {secondNumber} = {firstNumber+secondNumber}");
+}
+
+static void Subtract()
+{
+  (decimal firstNumber, decimal secondNumber) = InputTwoNumbers();
+  Console.WriteLine($"\n{firstNumber} - {secondNumber} = {firstNumber-secondNumber}");
+}
+
+static void Multiply()
+{
+  (decimal firstNumber, decimal secondNumber) = InputTwoNumbers();
+  Console.WriteLine($"\n{firstNumber} * {secondNumber} = {firstNumber*secondNumber}");
+}
+
+static void Divide()
+{
+  (decimal firstNumber, decimal secondNumber) = InputTwoNumbers();
+
+  if(secondNumber == 0)
+  {
+    Console.WriteLine("\n0 ga bo'lib bo'lmaydi!");
+    return;
+  }
+  Console.WriteLine($"\n{firstNumber} / {secondNumber} = {firstNumber/secondNumber}");
+}
+
+static void Modulo()
+{
+  (decimal firstNumber, decimal secondNumber) = InputTwoNumbers();
+  Console.WriteLine($"\n{firstNumber} % {secondNumber} = {firstNumber%secondNumber}");
+}
+
+static void Square()
+{
+  decimal number = InputOneNumber();
+  Console.WriteLine($"\n{number} sonining kvadrati: {Math.Pow((int) number, 2)}");
+}
+
+static void Cube()
+{
+  decimal number = InputOneNumber();
+  Console.WriteLine($"\n{number} sonining kubi: {Math.Pow((int) number, 3)}");
+}
+
+static void SquareRoot()
+{
+  decimal number = InputOneNumber();
+  Console.WriteLine($"\n{number} sonining ikkilik ildizi: {Math.Sqrt((int) number)}");
+}
+
+static void FindPrimes()
+{
+  decimal number = InputOneNumber();
+  int sum = 0;
+  int counter = 0;
+  for(int i = 1; i < number; i++)
+  {
+    for(int j = 1; j < number; j++)
+    {
+      if(i % j == 0) counter++;
+    }
+
+    if(counter == 2) 
+    {
+      Console.Write($"-{i}-");
+      sum += i;
+    }
+    counter = 0;
+  }
+
+  Console.WriteLine($"\n1 dan {number} orasidagi tub sonlar yig'indisi: {sum}");
+}
+
+static void Power()
+{
+  Console.Write("\nSonni kiriting: ");
+  string? firstString = Console.ReadLine();
+  double firstNumber = Convert.ToDouble(firstString);
+  Console.Write("Darajani kiriting: ");
+  string? secondString = Console.ReadLine();
+  double secondNumber = Convert.ToDouble(secondString);
+
+  Console.WriteLine($"\n{firstNumber} sonining {secondNumber}-darajasi: {Math.Pow(firstNumber, secondNumber)}");
+}
+
+static void TriangleArea()
+{
+  Console.Write("\nUchburchak a tomoni: ");
+  string? aSideStr = Console.ReadLine();
+  int aSide = Convert.ToInt32(aSideStr);
+
+  Console.Write("Uchburchak b tomoni: ");
+  string? bSideStr = Console.ReadLine();
+  int bSide = Convert.ToInt32(bSideStr);
+
+  Console.Write("Uchburchak c tomoni: ");
+  string? cSideStr = Console.ReadLine();
+  int cSide = Convert.ToInt32(cSideStr);
+
+  int sumOfSides = (aSide + bSide + cSide) / 2;
+  decimal areaTriangle = (decimal) Math.Sqrt(sumOfSides * (sumOfSides - aSide) * (sumOfSides - bSide) * (sumOfSides - cSide));
+
+  Console.WriteLine($"\nUchburchak yuzi: {areaTriangle}");
+}
+
+static void CircleProperties()
+{
+  Console.Write("\nAylana yoki doira radiusi: ");
+  string? radiusStr = Console.ReadLine();
+  double radius = Convert.ToDouble(radiusStr);
+
+  Console.WriteLine($"\nAylana uzunligi: {(2 * Math.PI * radius):0.##}");
+  Console.WriteLine($"\nDoira yuzi: {(Math.PI * Math.Pow(radius, 2)):0.##}");
+}
+
+static void SphereVolume()
+{
+  Console.Write("\nShar radiusi: ");
+  string? radiusStr = Console.ReadLine();
+  double radius = Convert.ToDouble(radiusStr);
+
+  Console.WriteLine($"\nShar hajmi: {(4 * Math.PI * Math.Pow(radius, 3) / 3):0.##}");
+}
+
+static void CylinderVolume()
+{
+  Console.Write("\nSilindr radiusi: ");
+  string? radiusStr = Console.ReadLine();
+  double radius = Convert.ToDouble(radiusStr);
+  Console.Write("Silindr balandligi: ");
+  string? heightStr = Console.ReadLine();
+  double height = Convert.ToDouble(heightStr);
+
+  Console.WriteLine($"\nSilindr hajmi: {(Math.PI * Math.Pow(radius, 2) * height):0.##}");
+}
+
+static void ConeVolume()
+{
+  Console.Write("\nKonus radiusi: ");
+  string? radiusStr = Console.ReadLine();
+  double radius = Convert.ToDouble(radiusStr);
+  Console.Write("Konus balandligi: ");
+  string? heightStr = Console.ReadLine();
+  double height = Convert.ToDouble(heightStr);
+
+
+  Console.WriteLine($"\nKonus hajmi: {(Math.PI * Math.Pow(radius, 2) * height / 3):0.##}");
+}
+
+static void PythagoreanTheorem()
+{
+  Console.Write("\nKichik katet: ");
+  string? aSideStr = Console.ReadLine();
+  double aSide = Convert.ToDouble(aSideStr);
+  Console.Write("Katta katet: ");
+  string? bSideStr = Console.ReadLine();
+  double bSide = Convert.ToDouble(bSideStr);
+
+  Console.WriteLine($"\nGippotenuza: {Math.Sqrt(Math.Pow(aSide, 2) + Math.Pow(bSide, 2))}");
+}
